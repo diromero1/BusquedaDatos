@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Url from './component/url'
+import NavioComp from './component/navioComp'
 
 class App extends React.Component {
   state = {
@@ -17,13 +18,15 @@ class App extends React.Component {
           datos: data,
           url: url
         });
-      });
+      })
+      .then(NavioComp.update);
   }
 
   render(){
     return(<div>
         <h1>URL:</h1>
         <Url searchData={this.searchData}/>
+        <NavioComp data={this.state.datos}/>
       </div>)
   }
 }
