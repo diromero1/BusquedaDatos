@@ -1,17 +1,23 @@
 import React from 'react';
 import './App.css';
-import navio from "navio";
 import Url from './component/url'
 
 class App extends React.Component {
   state = {
-    data: []
+    url: '',
+    datos: []
   }
 
 
   searchData = (url) => {
-    fetch(url).then(res => res.json).then(data => this.setState({data: data}));
-    const nv = new navio(this.myDiv,600)
+    fetch(url)
+      .then(res => res.json())
+      .then(data => {
+        this.setState({
+          datos: data,
+          url: url
+        });
+      });
   }
 
   render(){

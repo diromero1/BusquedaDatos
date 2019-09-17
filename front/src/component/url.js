@@ -7,8 +7,8 @@ export default class Url extends Component {
   }
 
   onSubmit = (e) =>{
-    this.props.searchData(this.state.url)
     e.preventDefault();
+    this.props.searchData(this.state.url)
   }
 
   onChange = (e) => {
