@@ -9,7 +9,9 @@ class App extends React.Component {
   }
 
 
-  searchData = () => {
+  searchData = (url) => {
+    fetch(url).then(res => res.json).then(data => this.setState({data: data}));
+    const nv = new navio(this.myDiv,600)
   }
 
   render(){
