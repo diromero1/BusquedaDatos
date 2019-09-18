@@ -1,6 +1,6 @@
 # BusquedaDatos
 
-Esta es una aplicación que sirve para encontrar datos de cualquier página.
+Esta es una aplicación que sirve para encontrar datos de cualquier página. (Elegí la opción 2. Entrega 17/09/2019 a las 8pm)
 
 ## Getting Started
 
@@ -15,6 +15,8 @@ La maquina de despliegue debe tener: javascrypt, yarn, nodejs, reactjs.
 ## Deployment
 
 Despliega un navegador y busca la url localhost:3000, ingresa la url y navega por la página.
+En el espacio inserta el url (la url debe tener un "?" al final) y pulsa search. A continuación, se mostrarán los primeros 100 datos,
+podras pulsar adelante o atrás para mirar los 100 datos adelante o los 100 datos atrás.
 
 ## Built With
 
@@ -26,10 +28,6 @@ Despliega un navegador y busca la url localhost:3000, ingresa la url y navega po
 ## Versioning
 
 **Version 1.0.0**
-
-## Screenshot
-
-![screenshot](https://github.com/diromero1/CoverLetter/blob/master/img/screenshot.PNG?raw=true)
 
 ## Authors
 

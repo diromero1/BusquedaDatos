@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   irAdelante = () => {
-    if(this.state.datos.length===100){
+    if(this.state.datos.length>=99){
       this.setState({pagina: this.state.pagina+1});
       console.log("Pagina", this.state.pagina)
     }else{
