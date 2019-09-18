@@ -12,8 +12,8 @@ class App extends React.Component {
 
 
   searchData = (url) => {
-    console.log(url+'$limit='+this.state.pagina*100+'&$offset='+(this.state.pagina-1)*100)
-    fetch(url+'$limit='+this.state.pagina*100+'&$offset='+(this.state.pagina-1)*100)
+    console.log(url+'$limit=100&$offset='+(this.state.pagina-1)*100)
+    fetch(url+'$limit=100&$offset='+(this.state.pagina-1)*100)
       .then(res => res.json())
       .then(data => {
         this.setState({
@@ -34,7 +34,7 @@ class App extends React.Component {
   }
 
   irAdelante = () => {
-    if(this.state.pagina*100>=this.state.datos.length){
+    if(this.state.datos.length===100){
       this.setState({pagina: this.state.pagina+1});
       console.log("Pagina", this.state.pagina)
     }else{
